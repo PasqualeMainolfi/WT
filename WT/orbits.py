@@ -72,6 +72,7 @@ class Orbit():
         self.__sx = self.__sig[0, :]
         self.__sy = self.__sx if self.orbit_sig.ndim == 1 else self.__sig[1, :] 
         self.__sig_size = len(self.__sy)
+        self.__ndx_sig = 0
         
     
     def calculate(self, phase: float, freqs: tuple[float, float], max_r: float) -> tuple[float, float]:
