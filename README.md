@@ -63,7 +63,6 @@ y = np.zeros(SAMPLE_DUR, dtype=np.float64)
 for i in range(SAMPLE_DUR):
     sample = wt.get_sample(freqs=(FREQX, FREQY), haptic_freq=HAPTIC_FREQ, max_r=0.707)
     y[i] = sample
-
 # master envelope
 y *= np.hanning(SAMPLE_DUR)
 ```
