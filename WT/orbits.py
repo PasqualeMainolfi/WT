@@ -44,6 +44,7 @@ class Orbit():
         self.__sig_size = 0
         self.__sx = None
         self.__sy = None
+        self.__ndx_sig = 0
         
     @property
     def envelope(self) -> int:
